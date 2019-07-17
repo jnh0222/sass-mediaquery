@@ -1,0 +1,50 @@
+// base
+@import 'helper/_clearfix';
+@import 'media/_breakpoints';
+
+// mixins
+@import 'media/_respondAbove';
+@import 'media/_respondBelow';
+@import 'media/_respondBetween';
+
+// grid definition
+@import 'media/_grid';
+
+// detail
+
+html, body {
+	height: 100%;
+	background-color: #000;
+}
+
+.wrap {
+	font-size: 1.5rem;
+	color: white;
+	line-height: 1.5;
+	text-align: center;
+  
+	@include respond-above(lg) {
+		width: 1140px;
+		margin: 0 auto;
+	}
+}
+
+header {
+	background-color: darkseagreen;
+}
+
+.contents {
+	background-color: burlywood;
+}
+
+aside {
+	background-color: firebrick;
+}
+
+.item {
+	background-color: salmon;
+}
+
+footer {
+	background-color: darkslateblue;
+}
